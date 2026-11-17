@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChaosLab – Kaotik Sistem Analiz Laboratuvarı</title>
+  <!-- Tüm kütüphaneler yerel: harici bağlantı yok -->
+  <link href="/static/vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/vendor/katex/katex.min.css" rel="stylesheet">
+  <link href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-logo">
+      <svg viewBox="0 0 40 40" width="30" height="30" aria-hidden="true">
+        <path d="M20 20 C 8 6, 2 22, 14 24 C 24 26, 26 10, 20 20 C 14 30, 32 36, 30 20 C 28 8, 12 14, 20 20" fill="none" stroke="url(#g)" stroke-width="2.2" stroke-linecap="round"/>
+        <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs>
+      </svg>
+    </div>
+    <div>
+      <div class="brand-title">ChaosLab</div>
+      <div class="brand-sub" data-i18n="brandSub"></div>
+    </div>
+  </div>
+  <nav class="mode-switch" role="tablist">
+    <button type="button" id="mode-ode" class="mode-btn active" data-i18n="modeOde"></button>
+    <button type="button" id="mode-map" class="mode-btn" data-i18n="modeMap"></button>
+  </nav>
+  <div class="top-actions">
+    <button type="button" id="lang-btn" class="icon-btn" data-i18n-title="langTitle">EN</button>
+    <button type="button" id="theme-btn" class="icon-btn" data-i18n-title="themeTitle">☀</button>
+  </div>
+</header>
+
+<div id="views"></div>
+
+<script src="/static/vendor/bootstrap.bundle.min.js"></script>
+<script src="/static/vendor/katex/katex.min.js"></script>
+<script src="/static/vendor/plotly.min.js"></script>
+<script src="/static/i18n.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>
